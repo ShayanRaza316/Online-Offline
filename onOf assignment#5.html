@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    function checkOnlineStatus() {
+  if (navigator.onLine) {
+    alert("You are currently online.");
+  } else {
+    alert("You are currently offline.");
+  }
+}
+
+checkOnlineStatus();
+
+window.addEventListener("online", checkOnlineStatus);
+window.addEventListener("offline", checkOnlineStatus);
+</script>
+</body>
+</html>
